@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        .flex-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .flex-item {
+            width: 32%;
+            text-align: center;
+        }
+
+        .bg-blue {
+            background-color: #003399;
+            /* padding: 40px 0px; */
+        }
+
+        #logo {
+            width: 45%;
+        }
+
+        #btn {
+            padding: 15px 35px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0px;
+        }
+
+        #btn:hover {
+            color: white;
+            background-color: brown;
+        }
+
+        #footer {
+            background-color: #e5eaf5;
+            text-align: center;
+            padding: 30px 0px;
+            height: 15vh;
+            margin-top: 10px;
+        }
+
+        #bg-blue {
+            background-color: #003399;
+            color: white;
+        }
+
+        @media (max-width: 500px) {
+            .flex-item {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 920px) {
+            .flex-item {
+                width: 50%;
+                padding: 0;
+            }
+        }
+
+        @media (min-width: 921px) and (max-width: 1280px) {
+            .flex-item {
+                width: 35%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="heading">
+            <img id="logo" src="https://cdn.templates.unlayer.com/assets/1597218426091-xx.png" alt="" />
+        </div>
+        <div class="flex-item bg-blue">
+            <img src="https://cdn.templates.unlayer.com/assets/1597218650916-xxxxc.png" alt="" style="width: 30%;" />
+
+            <div style="width: 80%; margin: 10px auto; color: white;">
+                <strong>THANKS FOR SIGNING UP!</strong>
+                <p>Verify Your E-mail Address</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <p>Hi,</p>
+            <p>
+                You're almost ready to get started. Please click on the button below
+                to verify your email address and enjoy exclusive cleaning services
+                with us!
+            </p>
+            <button id="btn">VERIFY YOUR EMAIL</button>
+            <p>Thanks,</p>
+            <p>The Company Team</p>
+        </div>
+        <div class="flex-item" id="footer">
+            <b>Get in touch</b>
+            <p>Info@YourCompany.com</p>
+            <a href="https://facebook.com"></a><img
+                src="https://cdn.tools.unlayer.com/social/icons/circle-black/facebook.png" alt="" width="32px">
+
+            <a href="https://www.linkedin.com/"></a><img
+                src="https://cdn.tools.unlayer.com/social/icons/circle-black/linkedin.png" alt="" width="32px">
+
+            <a href="https://instagram.com"></a><img
+                src="https://cdn.tools.unlayer.com/social/icons/circle-black/instagram.png" alt="" width="32px">
+
+            <a href="https://youtube.com"></a><img
+                src="https://cdn.tools.unlayer.com/social/icons/circle-black/youtube.png" alt="" width="32px">
+        </div>
+        <div class="flex-item" id="bg-blue">
+            <p>Copyrights © Company All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
